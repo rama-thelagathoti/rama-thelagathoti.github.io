@@ -1,12 +1,73 @@
-# rama-thelagathoti.github.io
-<video id=example-video width=960 height=540 class="video-js vjs-default-skin" controls>
-  <source
-     src="https://192.168.1.5:8080/hls/test.m3u8"
-     type="application/x-mpegURL">
-</video>
-<script src="video.js"></script>
-<script src="videojs.hls.min.js"></script>
-<script>
-var player = videojs('example-video');
-player.play();
-</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name | Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 800px;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        img.profile-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #333;
+        }
+
+        p {
+            font-size: 1.2em;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .social-links a {
+            margin: 0 10px;
+            color: #333;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+        .social-links a:hover {
+            color: #0073e6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Profile Photo -->
+        <img src="photo.jpg" alt="Your Name" class="profile-photo">
+        
+        <!-- Personal Information -->
+        <h1>Your Name</h1>
+        <p>Welcome to my GitHub Page! I'm a researcher specializing in machine learning and bioinformatics, with a focus on miRNA-based disease detection and automated feature selection. Currently, I'm working at Boys Town in a research role.</p>
+        
+        <!-- Social Links (You can update with actual links) -->
+        <div class="social-links">
+            <a href="https://github.com/yourusername" target="_blank">GitHub</a> |
+            <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a> |
+            <a href="https://twitter.com/yourusername" target="_blank">Twitter</a>
+        </div>
+    </div>
+</body>
+</html>
